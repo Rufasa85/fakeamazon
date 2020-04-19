@@ -1,0 +1,14 @@
+<h1>Welcome to my store!</h1>
+<div class="productCardsContainer">
+
+{{#each products}}
+   
+        <div class="productCard">
+            <p>thing: {{product_name}}</p>
+            <p>price: {{price}}</p>
+            <button class="deleteMe" data-id={{id}}>Delete me!</button>
+            <a href="/products/{{id}}"> <button>details</button></a>
+        </div>
+    
+{{/each}}
+</div>

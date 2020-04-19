@@ -1,0 +1,17 @@
+body {
+    background: salmon
+}
+
+.productCardsContainer {
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.productCard {
+    width:20vw;
+    background: gray;
+    border:1px solid black;
+    box-shadow:2px 2px 5px purple;
+    border-radius: 3%;
+}

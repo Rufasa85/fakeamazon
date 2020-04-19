@@ -1,0 +1,16 @@
+<h1>{{product_name}} info</h1>
+<h3>Price: {{price}}</h3>
+<a href="/products/edit/{{id}}"><button>Edit this product!</button></a>
+<h3>Reviews!</h3>
+{{#each Reviews}}
+    <h4>{{title}} by {{author}}</h4>
+    <p>{{body}}</p>
+{{/each}}
+<h3>Add your Review!</h3>
+<form action="" id="createReviewForm">
+    <input type="text" name ="review_title" id= "review_title" placeholder="title">
+    <input type="text" name ="review_author" id= "review_author" placeholder="author">
+    <input type="text" name ="review_body" id= "review_body" placeholder="body">
+    <input type="hidden" id = "ProductIdInput" value={{id}}>
+    <input type="submit" value="Add your review!">
+</form>
